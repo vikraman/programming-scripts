@@ -31,13 +31,13 @@ CXXTMPL="                     \
 using namespace std;        \n\
                             \n\
 int main () {               \n\
-  int t, T;                 \n\
+    int t, T;               \n\
                             \n\
-  cin >> T;                 \n\
-  for (t = 1; t <= T; t++) {\n\
+    cin >> T;               \n\
+    for (t = 1; t <= T; t++) {\n\
                             \n\
-  }                         \n\
-  return 0;                 \n\
+    }                       \n\
+    return 0;               \n\
 }"
 CFLAGS="-Wall -Wextra -g -pipe"
 CXXFLAGS="$CFLAGS"

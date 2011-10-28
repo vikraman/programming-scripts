@@ -9,13 +9,13 @@ FUNC=`echo "$SIG" | awk -F'(' '{ print $1 }' | awk '{ print $2 }'`
 CXXTMPL="             \
 class $NAME {       \n\
 public:             \n\
-  $SIG {            \n\
-  }                 \n\
+    $SIG {          \n\
+    }               \n\
 };                  \n\
                     \n\
 int main () {       \n\
-  $NAME().$FUNC();  \n\
-  return 0;         \n\
+    $NAME().$FUNC();\n\
+    return 0;       \n\
 }"
 CFLAGS="-Wall -Wextra -g -pipe"
 CXXFLAGS="$CFLAGS"
